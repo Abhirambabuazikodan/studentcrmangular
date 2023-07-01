@@ -1,0 +1,25 @@
+<p>studentdetail Works!!!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-6">
+            <div class="card" style="width: 80%;">
+                <div class="card-header">
+                    Student Details
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{student.name}}</li>
+                    <li class="list-group-item">{{student.course}}</li>
+                    <li class="list-group-item">{{student.email}}</li>
+                    <li class="list-group-item">{{student.address}}</li>
+                    <li class="list-group-item">{{student.contact}}</li>
+                    <li class="list-group-item">{{student.gender}}</li>
+                </ul>
+                <div class="card-footer">
+                    <button class="btn btn-danger" (click)="removeStudent(student.id)">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="container">
+    <!-- :{"name":"vineeth","course":"python","email":"vineeth@gmail.com","address":"vinubhavan","contact":987654321,"gender":"male"} -->
+    <h1 class="text-center">Add Student Details</h1>
+    <div class="row mt-5">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <form action="" class="p-3 shadow" [formGroup]="studentForm" (ngSubmit)=" createStudent()">
+                <div class="mb-3">
+                    <input type="text" placeholder="enter name" class="form-control" formControlName="name">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="enter course" class="form-control" formControlName="course">
+                </div>
+                <div class="mb-3">
+                    <input type="email" placeholder="enter email" class="form-control" formControlName="email">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="enter address" class="form-control" formControlName="address">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="enter contact" class="form-control" formControlName="contact">
+                </div>
+                <div class="mb-3">
+                    <select name="" id="" class="form-select" formControlName="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" value="create" class="btn btn-info form-control"[disabled]="studentForm.invalid">
+                </div>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
